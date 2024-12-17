@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LuxuryRent - Website Rental Mobil</title>
+    <style>
+        /* Reset dasar */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Fullscreen Layout */
+        body, html {
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+
+        /* Wrapper Fullscreen */
+        .wrapper {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            height: 100%;
+            background: url('resource/welcome.jpg');
+            background-size: cover; /* Menutupi seluruh layar */
+            position: relative;
+        }
+        /* Overlay Transparan */
+        .wrapper::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.2); /* Warna hitam dengan transparansi 50% */
+            z-index: 1;
+        }
+
+        /* Header */
+        .header {
+            background-color: #66a1ed;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            width: 100%;
+            position: relative;
+            z-index: 2;
+        }
+
+        .header h1 {
+            font-size: 28px;
+            margin-bottom: 5px;
+        }
+
+        .header h3 {
+            font-size: 16px;
+            font-weight: 300;
+            font-style: italic;
+        }
+
+        /* Main Content */
+        .main {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            width: 100%;
+            max-width: 1200px;
+            padding: 20px;
+            z-index: 2;
+        }
+
+        .welcome-text {
+            max-width: 600px;
+            margin-left: 10px;
+        }
+
+        
+        .welcome-text h2 {
+            font-size: 36px;
+            margin-bottom: 15px;
+            color: #5083bd;
+        }
+
+        .welcome-text p {
+            font-size: 18px;
+            line-height: 1.6;
+            color: #ffffff;
+            text-align: justify;
+        }
+
+        .buttons {
+            margin-top: 20px;
+        }
+
+        .buttons a {
+            text-decoration: none;
+            display: inline-block;
+            margin-right: 10px;
+            padding: 10px 20px;
+            border: 2px solid #66a1ed;
+            border-radius: 5px;
+            color: #66a1ed;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+
+        .buttons a.primary {
+            background-color: #66a1ed;
+            color: white;
+        }
+
+        .buttons a:hover {
+            background-color: #66a1ed;
+            color: white;
+        }
+
+        /* Footer */
+        .footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #66a1ed;
+            color: white;
+            font-size: 12px;
+            width: 100%;
+            position: relative;
+            z-index: 2;
+        }
+
+        .footer a {
+            color: #f0f4ff;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <!-- Overlay -->
+        <div class="overlay"></div>
+
+        <!-- Header -->
+        <div class="header">
+            <h1>LuxuryRent</h1>
+            <h3>Website Rental Mobil</h3>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main">
+            <div class="welcome-text">
+                <h2>Rental Mobil Mewah Terbaik</h2>
+                <p>
+                    LuxuryRent menyediakan layanan rental mobil mewah berkualitas tinggi untuk keperluan harian, acara spesial, atau perjalanan bisnis Anda. Dengan pilihan mobil eksklusif, kami menjamin kenyamanan, keamanan, dan pengalaman berkendara yang luar biasa. Nikmati kemewahan dan layanan profesional hanya di LuxuryRent.
+                </p>
+                <div class="buttons">
+                    <a href="Login.php" class="primary">Masuk</a>
+                    <a href="Daftar.php">Daftar</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            © 2024 <a href="#">LuxuryRent</a>. Semua Hak Dilindungi.
+        </div>
+    </div>
+</body>
+</html>

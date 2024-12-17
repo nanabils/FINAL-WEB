@@ -1,0 +1,101 @@
+/* Resetting basic styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    position: relative;
+    background-color: #f5f5f5;
+  }
+
+ /* Pastikan gambar background tampil dengan benar */
+.background-image {
+  position: fixed; /* Fix gambar agar selalu di belakang */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('https://www.hdcarwallpapers.com/walls/lamborghini_aventador_s_roadster_4k_2018-HD.jpg');
+  background-size: cover; /* Agar gambar memenuhi seluruh layar */
+  background-position: center; /* Gambar akan terpusat */
+  filter: brightness(0.7); /* Efek gelap pada background agar konten lebih jelas */
+  z-index: -1; /* Gambar tetap di bawah konten lainnya */
+}
+
+
+  .login-container {
+    width: 100%;
+    max-width: 400px;
+    background-color: #fff;
+    padding: 2em;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+
+  h2 {
+    margin-bottom: 1.5em;
+    font-weight: normal;
+    color: navy;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  label {
+    font-size: 0.9em;
+    color: #333;
+    margin-bottom: 0.5em;
+    text-align: left;
+  }
+
+  input[type="username"],
+  input[type="password"] {
+    padding: 0.8em;
+    margin-bottom: 1em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+    width: 100%;
+  }
+  input[type="username"] {
+    padding: 0.8em;
+    margin-bottom: 1em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+    width: 100%;
+  }
+  
+  .forgot-password {
+    font-size: 0.9em;
+    color: #666;
+    text-decoration: none;
+  }
+
+  .forgot-password:hover {
+    text-decoration: underline;
+  }
+
+  .login-button {
+    padding: 0.8em;
+    border: none;
+    border-radius: 4px;
+    background-color: rgb(137, 168, 215);
+    color: #fff;
+    font-size: 1em;
+    cursor: pointer;
+  }
+
+  .login-button:hover {
+    background-color: rgb(78, 130, 207);
+  }

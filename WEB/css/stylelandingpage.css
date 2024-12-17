@@ -1,0 +1,137 @@
+/* General styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header, footer {
+  background-color: #fff;
+  color: #333;
+  text-align: center;
+  padding: 15px;
+}
+
+p{
+  text-align: justify;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 15px;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.section-heading {
+  text-align: center;
+  margin: 40px 0 20px;
+  font-size: 24px;
+  color: #0f4080;
+}
+
+.section-description {
+  text-align: center;
+  color: #666;
+}
+
+.button {
+  display: inline-block;
+  background-color: #86b3ed;
+  color: #333;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+.button:hover {
+  background-color: #66a1ed;
+}
+
+/* Home Section */
+#home {
+  background-image: url('https://www.hdcarwallpapers.com/walls/lamborghini_aventador_s_roadster_4k_2018-HD.jpg');
+  background-size: cover;
+  background-position: center;
+  color: #ffffff;
+  padding: 100px 0;
+  text-align: center;
+}
+
+#home h1 {
+  font-size: 48px;
+  margin: 0;
+}
+
+/* About Section */
+#about {
+  padding: 50px 0;
+}
+
+#about-content {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+#about img {
+  width: 50%;
+  border-radius: 10px;
+}
+
+#about-text {
+  width: 50%;
+}
+
+/* Services Section */
+#services {
+  padding: 50px 0;
+  background-color: #f8f8f8;
+  text-align: center;
+}
+
+.service {
+  display: inline-block;
+  width: 30%;
+  margin: 20px;
+}
+
+.service img {
+  width: 60px;
+  margin-bottom: 10px;
+  border-radius: 50px;
+}
+
+/* Car Gallery Section */
+#gallery {
+  padding: 50px 0;
+}
+
+.gallery-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+}
+
+.gallery-grid img {
+  width: 200px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+/* Footer */
+footer p {
+  margin: 5px 0;
+  text-align: center;
+}

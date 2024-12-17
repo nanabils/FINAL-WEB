@@ -1,0 +1,134 @@
+/* Reset styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-image: url('https://images6.alphacoders.com/982/982879.jpg'); /* Ganti dengan gambar background Anda */
+  background-size: cover;
+  background-position: center;
+}
+
+.container {
+  display: flex;
+  gap: 2em;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 2em;
+  border-radius: 10px;
+  max-width: 1200px;
+  width: 90%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Booking Form */
+.booking-form {
+  background-color: #4599f3;
+  padding: 2em;
+  border-radius: 10px;
+  width: 50%;
+}
+
+.booking-form h2 {
+  font-size: 1.5em;
+  color: #fff;
+  margin-bottom: 1em;
+}
+
+.booking-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.booking-form label {
+  font-size: 0.9em;
+  color: #fff;
+  margin-bottom: 0.2em;
+}
+
+.booking-form input[type="text"],
+.booking-form input[type="date"],
+.booking-form input[type="time"] {
+  width: 100%;
+  padding: 0.8em;
+  border: 1px solid #fff; /* Border putih untuk input */
+  border-radius: 5px;
+  background-color: #80b1e6;
+  color: #001a33;
+}
+
+.booking-form input::placeholder {
+  color: #001a33;
+  opacity: 0.8;
+}
+
+.date-time {
+  display: flex;
+  gap: 1em;
+}
+
+.date {
+  flex: 1;
+}
+
+.booking-form .book-now {
+  background-color: #ffffff;
+  color: #0f4d8e;
+  padding: 0.8em;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+  text-align: center;
+}
+
+.booking-form .book-now:hover {
+  background-color: #e23e3e;
+}
+
+/* Promo Text Section */
+.promo-text {
+  width: 50%;
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.promo-text h2 {
+  text-align: center;
+  font-size: 1.8em;
+  color: #0f4d8e;
+  margin-bottom: 1em;
+}
+
+.features {
+  display: flex;
+  gap: 1em;
+  margin-bottom: 1.5em;
+}
+
+.feature {
+  text-align: center;
+  width: 30%;
+}
+
+.feature img {
+  width: 150px;
+  height: 150px;
+  margin-bottom: 0.5em;
+  border-radius: 50px;
+}
+
+.feature p {
+  font-size: 0.9em;
+  color: #0f4d8e;
+}
+
